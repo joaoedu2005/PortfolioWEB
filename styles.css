@@ -1,0 +1,174 @@
+/* --- Reset Básico e Configurações Globais --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Evita barras de rolagem indesejadas */
+}
+
+/* --- Wrapper Principal para a Imagem e o Formulário --- */
+.main-content-wrapper {
+    display: flex; /* Habilita o Flexbox */
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 60%; /* Ajuste a largura total */
+    max-width: 1000px; /* Largura máxima para desktops */
+    height: 60%; /* Ajuste a altura total */
+    max-height: 1000px; /* Altura máxima */
+    overflow: hidden; /* Garante que a imagem e o formulário respeitem o border-radius */
+}
+
+/* --- Seção da Imagem --- */
+.image-aside {
+    flex: 1; /* A imagem ocupará um pouco mais de espaço que o formulário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5; /* Cor de fundo caso a imagem não cubra tudo ou não carregue */
+    overflow: hidden; /* Importante para a imagem não transbordar */
+}
+
+.image-aside .responsive-image {
+ 
+  width: 100%;
+  height: 100%;
+    object-fit:contain; 
+    display: block; /* Remove espaços extras abaixo da imagem */
+}
+
+/* --- Container Principal do Formulário --- */
+.login-container {
+    flex: 1.2; /* O formulário ocupará o espaço restante */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 30px;
+    /* Removemos o background-color e box-shadow daqui, pois agora estão no main-content-wrapper */
+    text-align: center;
+}
+
+.login-form {
+    width: 100%; /* Garante que o formulário ocupe o espaço disponível */
+    max-width: 350px; /* Largura máxima do formulário dentro do container */
+}
+
+.login-form h1 {
+    margin-bottom: 25px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* --- Grupos de Input (Label + Campo) --- */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito ao focar no campo de input */
+.input-group input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 8px rgba(102, 126, 234, 0.4);
+}
+
+/* --- Botão de Envio --- */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+button:hover {
+    background-color: #5a6fd2;
+}
+
+/* --- Opções Extras (Link de 'Esqueceu a senha?') --- */
+.extra-options {
+    margin-top: 20px;
+}
+
+.extra-options a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: text-decoration 0.3s;
+}
+
+.extra-options a:hover {
+    text-decoration: underline;
+}
+
+/* --- Media Queries para Responsividade --- */
+@media (max-width: 768px) {
+    .main-content-wrapper {
+        flex-direction: column; /* Em telas menores, a imagem e o formulário ficam um sobre o outro */
+        height: auto; /* Altura automática para se adaptar ao conteúdo */
+        max-height: none;
+        width: 95%;
+        padding: 20px; /* Adiciona um pouco de padding ao redor do conteúdo */
+    }
+
+    .image-aside {
+        flex: none; /* Remove a flexibilidade da imagem */
+        width: 50%;
+        height: 200px; /* Altura fixa para a imagem em telas menores */
+        border-bottom: 1px solid #eee; /* Linha separadora */
+        margin-bottom: 20px;
+        border-radius: 8px 8px 0 0; /* Arredonda apenas os cantos superiores */
+    }
+
+    .login-container {
+        flex: none;
+        padding: 20px 15px;
+    }
+    
+    .login-container h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 15px 10px;
+    }
+
+    .input-group input, button {
+        padding: 10px 12px;
+        font-size: 15px;
+    }
+}
