@@ -1,43 +1,113 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Login</title>
-    <link rel="stylesheet" href="styles.css">
+    <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--FIM GOOGLE FONTS-->
+    <!--BOOTSTRAP ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!--FIM BOOTSTRAP ICONS-->
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio</title>
 </head>
 <body>
-    
-    <div class="main-content-wrapper">
-        <div class="image-aside">
-            <img src="images/Asian family-rafiki (1).png" alt="imagem para tela de login" class="responsive-image">
-        </div>
-    </div>
 
-    <div class="login-container">
-        <form class="login-form">
-            <h1>Login</h1>
-            
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="Logo Teste">
+                </a>
             </div>
-            
-            <div class="input-group">
-                <label for="password">Senha</label>
-                <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+            <nav class="menuDesktop">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Especialidades</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Projetos</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="#">
+                    <button>Contato</button>
+                </a>
             </div>
-            
-            <button type="submit">Entrar</button>
-            
-            <div class="extra-options">
-                <a href="#">Esqueceu a senha?</a>
-            </div>
-        </form>
-    </div>
+        </div><!--interface-->
+    </header>
+    
+    <main>
+        <section class="topo-do-site"> 
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>Automação inteligente<span>.</span> Qualidade absoluta<span>.</span></h1>
+                        <p>Especialista em criar workflows eficientes com IA e garantir que cada funcionalidade opere com perfeição através testes manuais e automatizados.</p>
+
+                        <div class="btn-contato">
+                            <a href="#">
+                                <button>Entre em contato</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="img-topo-site">
+                        <img src="images/foto_editada.png" alt="">
+                    </div><!--img-topo-site-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo-do-site-->
+
+        <section class="especialidades">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-code-square"></i>
+                        <h3>Web Developer</h3>
+                        <p>Te ajudo a transformar ideias de sites em realidade com a produção de Landing Pages chamativas e funcionais para alavancar seu negócio.</p>
+                    </div><!--especialidades-box-->
+                    <div class="especialidades-box">
+                        <i class="bi bi-gear"></i>
+                        <h3>Quality Assurance</h3>
+                        <p>Faço testes manuais e automatizados utilizando ferramentas renomadas como Cypress, TestComplete, Swagger e Postman para garantir a qualidade contínua do serviço.</p>
+                    </div><!--especialidades-box-->
+                    <div class="especialidades-box">
+                        <i class="bi bi-openai"></i>
+                        <h3>Automação de Tarefas</h3>
+                        <p>Tenho vivência e experiência na criação de Workflows com automação de tarefas e agentes de I.A. através do n8n, as possibilidades são infinitas.</p>
+                    </div><!--especialidades-box-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--especialidades-->
+
+        <section class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="images/foto_profissional_IA_2.PNG" alt="">
+                    </div><!--img-sobre-->
+
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER, <span>SOU JOÃO EDUARDO.</span></h2>
+                        <p>Sou fascinado por construir sistemas que não só são inteligentes, mas também incrivelmente confiáveis.
+
+No meu dia a dia, eu crio e automatizo workflows com n8n e me dedico a encontrar e resolver problemas antes que eles aconteçam, usando uma combinação de testes manuais e automatizados (Cypress, TestComplete). Em resumo: eu construo com inteligência e valido com precisão. Fique à vontade para explorar meus projetos e ver como transformo ideias em realidade.</p>
+                        <p>Também possuo inúmeras outras habilidades, se interessou? Cheque meu LinkedIn e vamos conversar!</p>
+                        <div class="btn-social">
+                            <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="#"><button><i class="bi bi-github"></i></button></a>
+                        </div>
+                    </div><!--txt-sobre-->
+                </div>
+            </div><!--interface-->
+        </section><!--sobre>-->
+    </main>
 
 </body>
 </html>
