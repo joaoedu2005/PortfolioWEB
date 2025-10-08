@@ -47,6 +47,10 @@ button:hover{
     transform: scale(1.05);
 }
 
+p{
+    font-size: 18px;
+}
+
 
 /* ESTILO DO CABEÇALHO */
 header{
@@ -167,6 +171,13 @@ section.sobre .flex{
 }
 
 
+.sobre .img-sobre img{
+    width: 400px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
 .sobre .txt-sobre{
     color: #fff;
 }
@@ -197,4 +208,87 @@ section.sobre .flex{
     cursor: pointer;
     margin: 0 5px;
     transition: .2s;
+}
+
+/* ESTILO DO PORTFÓLIO */
+section.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff0f;
+}
+
+section.portfolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b9;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.img-port-n8n{
+    background-image: url('images/n8n-logo-hd.png');
+    width: 360px;
+    height: 460px;
+    background-size: contain;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+
+.overlay-n8n{
+    background-color: #000000c2;
+    background-image: url('images/n8n_image_1.png');
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: 1s;
+}
+
+.overlay-n8n:hover{
+    opacity: 1;
+}
+
+.overlay:hover{
+    opacity: 1;
 }
