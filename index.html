@@ -20,7 +20,7 @@
         <div class="interface">
             <div class="logo">
                 <a href="#">
-                    <img src="images/logo.png" alt="Logo Teste">
+                    <img src="images/logo_JEOG.png" alt="Logo Teste">
                 </a>
             </div>
             <nav class="menuDesktop">
@@ -96,12 +96,12 @@
                         <h2>MUITO PRAZER, <span>SOU JOÃO EDUARDO.</span></h2>
                         <p>Sou fascinado por construir sistemas que não só são inteligentes, mas também incrivelmente confiáveis.
 
-No meu dia a dia, eu crio e automatizo workflows com n8n e me dedico a encontrar e resolver problemas antes que eles aconteçam, usando uma combinação de testes manuais e automatizados (Cypress, TestComplete). Em resumo: eu construo com inteligência e valido com precisão. Fique à vontade para explorar meus projetos e ver como transformo ideias em realidade.</p>
+No meu dia a dia, eu crio e automatizo workflows com n8n e no ambiente de Desenvolvimento Web me dedico a encontrar e resolver problemas antes que eles aconteçam, usando uma combinação de testes manuais e automatizados (Cypress, TestComplete, Postman). Tenho habilidades com desenvolvimento de sites e manejo de documentação completa nos meus testes utilizando principalmente a ferramenta Jira. Em resumo: eu construo com inteligência e valido com precisão. Fique à vontade para explorar meus projetos e ver como transformo ideias em realidade.</p>
                         <p>Também possuo inúmeras outras habilidades, se interessou? Cheque meu LinkedIn e vamos conversar!</p>
                         <div class="btn-social">
-                            <a href="#"><button><i class="bi bi-instagram"></i></button></a>
-                            <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
-                            <a href="#"><button><i class="bi bi-github"></i></button></a>
+                            <a href="https://www.instagram.com/joaoedugirao16" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                                <a href="https://www.linkedin.com/in/joaoedugirao" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                                <a href="https://github.com/joaoedu2005" target="_blank"><button><i class="bi bi-github"></i></button></a>
                         </div>
                     </div><!--txt-sobre-->
                 </div>
@@ -124,7 +124,49 @@ No meu dia a dia, eu crio e automatizo workflows com n8n e me dedico a encontrar
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--portfolio-->
+
+        <section class="formulario">
+            <div class="interface">
+                <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu nome:" required>
+                    <input type="text" name="" id="" placeholder="Seu email:" required>
+                    <input type="text" name="" id="" placeholder="Seu celular:">
+                    <textarea name="" id="" placeholder="Sua mensagem:" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+            </div>
+        </section><!--formulario-->
     </main>
 
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/logo_JEOG.png" alt="">
+                    </div><!--logo-footer-->
+                    <div class="btn-social">
+                                <a href="https://www.instagram.com/joaoedugirao16" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                                <a href="https://www.linkedin.com/in/joaoedugirao" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                                <a href="https://github.com/joaoedu2005" target="_blank"><button><i class="bi bi-github"></i></button></a>
+                            </div><!--btn-social-->
+                        </div><!--flex-->
+            </div><!--line-footer-->
+                
+            <div class="line-footer borda">
+                <div class="flex">
+                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:joaoeduardogirao@gmail.com">joaoeduardogirao@gmail.com</a></p>
+                <p>&copy; <span id="current-year"></span> Todos os direitos reservados.</p>
+                </div><!--flex-->
+            </div><!--line-footer-->
+        </div><!--interface-->
+    </footer>
+
+    <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    </script>
 </body>
 </html>
