@@ -10,6 +10,7 @@
 body{
     background-color: black;
     height: 100vh;
+    scroll-behavior:smooth;
 }
 
 .interface{
@@ -21,6 +22,7 @@ body{
     display: flex;
 }
 
+
 .btn-contato button{
     padding: 10px 40px;
     font-size: 18px;
@@ -30,7 +32,13 @@ body{
     border-radius: 30px;
     cursor: pointer;
     transition: .2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
+
+.btn-contato a{
+    text-decoration: none;}
 
 h2.titulo{
     color: #fff;
