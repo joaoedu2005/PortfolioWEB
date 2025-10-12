@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="menu.js" defer></script>
+
+    <title>Portafolio</title>
+</head>
+
+<link rel="icon" href="images/code-square.svg" type="image/svg+xml">
+
+<body>
+
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo_JEOG.png" alt="Logo Teste">
+                </a>
+            </div><!--logo-->
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre mí</a></li>
+                    <li><a href="#projetos">Proyectos</a></li>
+                </ul>
+            </nav><!--menu-desktop-->
+
+            <div class="btn-language">
+                <div class="flex">
+                    <a href="index.html"><img src="/images/flag-brazil.png" alt="Bandera de Brasil"></a>
+                    <a href="index-spanish.html"><img src="/images/flag-spain.png" alt="Bandera de España"></a>
+                    <a href="index-english.html"><img src="/images/flag-united-states.png"
+                            alt="Bandera de Estados Unidos"></a>
+                </div><!--flex-->
+            </div><!--btn-language-->
+            <div class="btn-contato">
+                <a href="https://wa.me/5588993519649?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20tus%20servicios."
+                    target="_blank">
+                    <button>Contacto</button>
+                </a>
+            </div><!--btn-contato-->
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div><!--btn-abrir-menu-->
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div><!--menu-mobile-->
+
+                <nav class="">
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#sobre">Sobre mí</a></li>
+                        <li><a href="#projetos">Proyectos</a></li>
+                        <li><a href="https://wa.me/5588993519649?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20tus%20servicios.">Contacto</a>
+                        </li>
+                    </ul>
+                </nav><!--navbar-->
+
+            </div>
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>Automatización inteligente<span>.</span> Calidad absoluta<span>.</span></h1>
+                        <p>Especialista en crear flujos de trabajo eficientes con IA y garantizar que cada funcionalidad
+                            opere a la perfección mediante pruebas manuales y automatizadas.</p>
+
+                        <div class="btn-contato">
+                            <a href="https://wa.me/5588993519649?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20tus%20servicios."
+                                target="_blank">
+                                <button>Ponte en contacto <i class="bi bi-whatsapp"></i></button>
+
+                            </a>
+                        </div><!--btn-contato-->
+                    </div><!--txt-topo-site-->
+
+                    <div class="img-topo-site">
+                        <img src="images/foto_editada.png" alt="">
+                    </div>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section>
+        <section id="especialidades" class="especialidades">
+            <div class="interface">
+                <h2 class="titulo">MIS <span>ESPECIALIDADES.</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-code-square"></i>
+                        <h3>Desarrollador Web</h3>
+                        <p>Te ayudo a transformar ideas de sitios web en realidad con la producción de Landing Pages
+                            atractivas y funcionales para impulsar tu negocio.</p>
+                    </div>
+                    <div class="especialidades-box">
+                        <i class="bi bi-gear"></i>
+                        <h3>Garantía de Calidad</h3>
+                        <p>Realizo pruebas manuales y automatizadas utilizando herramientas de renombre como Cypress,
+                            TestComplete, Swagger y Postman para asegurar la calidad continua del servicio.</p>
+                    </div>
+                    <div class="especialidades-box">
+                        <i class="bi bi-openai"></i>
+                        <h3>Automatización de Tareas</h3>
+                        <p>Tengo experiencia en la creación de flujos de trabajo con automatización de tareas y agentes
+                            de IA utilizando n8n; las posibilidades son infinitas.</p>
+                    </div>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--especialidades-->
+        <section id="sobre" class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="images/foto_profissional_IA_2.PNG" alt="">
+                    </div>
+                    <div class="txt-sobre">
+                        <h2>MUCHO GUSTO, <span>SOY JOÃO EDUARDO.</span></h2>
+                        <p>Estoy fascinado por construir sistemas que no solo son inteligentes, sino también
+                            increíblemente fiables.
+
+                            En mi día a día, creo y automatizo flujos de trabajo con n8n, y en el entorno de Desarrollo
+                            Web me dedico a encontrar y resolver problemas antes de que sucedan, utilizando una
+                            combinación de pruebas manuales y automatizadas (Cypress, TestComplete, Postman).</p>
+                        <p> Tengo habilidades en el desarrollo de sitios web y la gestión de documentación completa en
+                            mis pruebas utilizando principalmente la herramienta Jira. En resumen: construyo con
+                            inteligencia y valido con precisión. Siéntete libre de explorar mis proyectos y ver cómo
+                            transformo ideas en realidad.</p>
+                        <p>También poseo numerosas otras habilidades. ¿Te interesa? ¡Visita mi LinkedIn y conversemos!
+                        </p>
+                        <div class="btn-social">
+                            <a href="https://www.instagram.com/joaoedugirao16" target="_blank"><button><i
+                                        class="bi bi-instagram"></i></button></a>
+                            <a href="https://www.linkedin.com/in/joaoedugirao" target="_blank"><button><i
+                                        class="bi bi-linkedin"></i></button></a>
+                            <a href="https://github.com/joaoedu2005" target="_blank"><button><i
+                                        class="bi bi-github"></i></button></a>
+                        </div>
+                    </div><!--txt-sobre-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--section-sobre-->
+        <section id="projetos" class="portfolio">
+            <div class="interface">
+                <h2 class="titulo">MI <span>PORTAFOLIO.</span></h2>
+                <div class="flex">
+                    <div class="img-port"
+                        style="background-image: url(images/Site_Centro_Artesanato_Tela_Inteira1.png);">
+                        <div class="overlay">Proyecto 1</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(images/Unimed_LandingPage_Tela_Inteira1.png);">
+                        <div class="overlay">Proyecto 2</div>
+                    </div>
+                    <div class="img-port-n8n">
+                        <div class="overlay-n8n">Proyecto 3</div>
+                    </div>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--section-projetos-->
+        <section class="formulario">
+            <div class="interface">
+                <h2 class="titulo">HABLA <span>CONMIGO.</span></h2>
+
+                <form action="https://formspree.io/f/mvgwwzgy" method="POST">
+                    <label>
+                        Tu nombre:
+                        <input type="text" name="name" placeholder="Tu Nombre" required>
+                    </label><label>
+                        Tu correo electrónico:
+                        <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                    </label><label>
+                        Tu mensaje:
+                        <textarea name="message"
+                            placeholder="Escribe tu mensaje aquí. (Este mensaje será recibido en mi correo electrónico, responderé lo antes posible)"
+                            required></textarea>
+                    </label>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+            </div><!--interface-->
+        </section><!--section-formulario-->
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/logo_JEOG.png" alt="">
+                    </div>
+                    <div class="btn-social">
+                        <a href="https://www.instagram.com/joaoedugirao16" target="_blank"><button><i
+                                    class="bi bi-instagram"></i></button></a>
+                        <a href="https://www.linkedin.com/in/joaoedugirao" target="_blank"><button><i
+                                    class="bi bi-linkedin"></i></button></a>
+                        <a href="https://github.com/joaoedu2005" target="_blank"><button><i
+                                    class="bi bi-github"></i></button></a>
+                    </div>
+                </div><!--flex-->
+            </div><!--line-footer-->
+            <div class="line-footer borda">
+                <div class="flex">
+                    <p><i class="bi bi-envelope-fill"></i> <a
+                            href="mailto:joaoeduardogirao@gmail.com">joaoeduardogirao@gmail.com</a></p>
+                    <p>&copy; <span id="current-year"></span> Todos los derechos reservados.</p>
+                </div><!--flex-->
+            </div><!--line-footer-->
+        </div><!--intarface-->
+    </footer><!--footer-->
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
